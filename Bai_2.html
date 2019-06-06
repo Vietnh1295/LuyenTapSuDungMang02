@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var BanKinh=parseInt(prompt('Nhập bán kính'));
+    function HinhTron(BanKinh) {
+        var ChuVi=BanKinh*2*Math.PI;
+        var DienTich=BanKinh*BanKinh*Math.PI;
+        return 'Với Bán kính bằng '+BanKinh+'<br> Thì Diện tích '+DienTich+ ' <br> Chu vi là '+ChuVi;
+    }
+    document.write(HinhTron(BanKinh));
+</script>
+</body>
+</html>

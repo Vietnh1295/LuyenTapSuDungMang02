@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var arr=new Array();
+    var num=parseInt(prompt('Nhập số luong'));
+    while (arr.length!=num)
+    {
+        arr.push(prompt('Nhập vị trị thứ '+(arr.length+1)));
+    }
+    var value=prompt('Nhâp ki tu');
+    function KiemTra(arr,value) {
+        var count=0;
+        for(var i=0;i<arr.length;i++)
+        {
+            if(value==arr[i])
+            {
+                count++;
+            }
+        }
+        return count;
+    }
+    alert(KiemTra(arr,value)+' là số lần xuất hiện của '+value);
+</script>
+</body>
+</html>

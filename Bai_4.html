@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num=prompt('Nhập số');
+    var ChuoiSo='0123456789';
+    function KiemTra(num) {
+        for(var i=0;i<num.length;i++){
+        if(ChuoiSo.indexOf(num[i])==-1)
+        {
+            return false;
+            break;
+        }
+        return true;
+    }
+    }
+    alert(KiemTra(num));
+</script>
+</body>
+</html>
